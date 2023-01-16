@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style/style.css" rel="stylesheet" type="text/css" />
+    <!-- Scripts -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.min.js"
+      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+      crossorigin="anonymous"
+    ></script>
+    <!-- fontAwesome -->
+    <script src="https://use.fontawesome.com/43868a123a.js"></script>
+    <script src="./scripts/blogScript.js"></script>
+    <title>Brandly Blog</title>
+  </head>
+  <body>
+    <header id="header" class="blog-page-img" role="banner">
+      <nav class="grid center nav-menu" role="navigation">
+        <h2 class="logo text-upper">Brand <span>ly</span></h2>
+        <a id="toggle" href="#" class="toggle-menu">
+          <span class="toggle-line"></span>
+          <span class="toggle-line"></span>
+          <span class="toggle-line"></span>
+        </a>
+        <ul class="nav flex">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">Shop</a></li>
+          <li class="brands">
+            <a href="#"
+              >Brands <i class="fa fa-caret-down" aria-hidden="true"></i
+            ></a>
+            <ul class="more-brands">
+              <li><a href="#">MPolo</a></li>
+              <li><a href="#">Adidas</a></li>
+              <li><a href="#">Nike</a></li>
+            </ul>
+          </li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main id="contact-main-content" role="main">
+      <div class="line"></div>
+      <h2 class="text-cappitilize latest-title">Contact Us</h2>
+      <div class="line"></div>
+      <!-- COntact Form -->
+      <div class="center grid">
+      <form
+        id="contact-form"
+        method="post"
+        action="#"
+      >
+        <div class="form-group">
+          <label for="name">Name</label>
+          <div>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              tabindex="1"
+              placeholder="Enter your name"
+              required
+            />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="email" class="fcf-label">Email address</label>
+          <div>
+            <input
+              type="email"
+              id="emali"
+              name="email"
+              tabindex="2"
+              placeholder="Enter your email"
+              required
+            />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="message" class="fcf-label">Message</label>
+          <div>
+            <textarea
+              id="message"
+              name="message"
+              rows="4"
+              maxlength="2000"
+              tabindex="3"
+              placeholder="Enter your message here.."
+              required
+            ></textarea>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <button
+            type="submit"
+            tabindex="4"
+          >
+            Send
+          </button>
+        </div>
+      </form>
+      <div class="phone">
+        <h4>You can also call us:</h4>
+        <p><a href="tel:00389766666666" title="call us">076-666-666</a></p>
+        <h4>Or visit us on:</h4>
+        <div class="social flex">
+        <p><i class="fa fa-facebook-official" aria-hidden="true"></i></p>
+        <p><i class="fa fa-twitter-square" aria-hidden="true"></i></p>
+        <p><i class="fa fa-instagram" aria-hidden="true"></i></p>
+        </div>
+      </div>
+           
+        <div class="subscribe">
+          <p class="text-upper sub-parg">
+            Subscribe to our newsletter to recive latest news and offers
+          </p>
+          <div class="email-address">
+            <input class="mail" type="email" placeholder="EMAIL ADDRESS" />
+          </div>
+          <a class="text-upper btn-subscribe" href="#">Subscribe</a>
+        </div>
+        </div>
+    </main>
+    <footer id="page-footer" class="footer" role="contentinfo">
+      <p>Made with <i class="fa fa-heart" aria-="true"></i> by WebDonut.net</p>
+    </footer>
+  </body>
+</html>
